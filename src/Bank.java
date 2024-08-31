@@ -4,18 +4,19 @@ class Bank {
     public Bank(int Saldo) {
         this.Saldo = Saldo;
         System.out.println("selamat datang");
+        GetSaldo();
     }
-    public void tampilkanSaldo() {
-        System.out.println("Saldo saat ini: " + Saldo + "\n");
+    public void GetSaldo() {
+        System.out.println("Saldo saat ini: RP." + Saldo + "\n");
     }
     void simpanUang(int Simpan) {
         this.Saldo += Simpan;
-        System.out.println("Simpan uang: " + Simpan);
-        tampilkanSaldo();
+        System.out.println("Simpan uang: RP." + Simpan);
+        GetSaldo();
     }
     void ambilUang(int Ambil) {
         this.Saldo -= Ambil;
-        System.out.println("Ambil uang: " + Saldo);
-        tampilkanSaldo();
+        System.out.println("Ambil uang: RP." + Saldo);
+        GetSaldo();
     }
 }
